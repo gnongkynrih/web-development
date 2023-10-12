@@ -3,17 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>github.com/gnongkynrih</title>
 </head>
 <body>
   <form>
     <div>
       <label>User name</label>
-      <input type="text">
+      <input required type="email">
     </div>
     <div>
       <label>Password</label>
-      <input type="password">
+      <input required type="password">
+    </div>
+    <div>
+      <label>Age</label>
+      <input type="number">
+    </div>
+    <div>
+      <label for="">Date of Joining</label>
+      <input type="date">
+    </div>
+    <div>
+      <label for="">Dob</label>
+      <input placeholder="DD" style="width: 70px;" type="number">
+      <input type="number" style="width: 80px;">
+      <input placeholder="YYYY" type="number" style="width: 80px;">
+    </div>
+    <div>
+      <label for="">Hobbies</label>
+      <input type="checkbox">Singing
+      <input type="checkbox">Dancing
+      <input type="checkbox">Cooking
+    </div>
+    <div>
+      <label for="">Gender</label>
+      <input checked name="gender" type="radio">Female
+      <input name="gender" type="radio">Male
+      <input name="gender"  type="radio">Prefer not to say
+    </div>
+    <div>
+      <label for="">Food</label>
+      <input name="food" type="radio">Veg
+      <input name="food" type="radio">Non Veg
     </div>
     <div>
       <button type="submit">Login</button>
