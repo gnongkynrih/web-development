@@ -4,45 +4,116 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First Class</title>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style type="text/css">
+   body{
+    background-color: #B34B38;
+    color: white;
+   }
+   .btn-gordon-brown{
+    background-color: #BD7D49;
+    border-color: #BD7D49;
+   }
+
+   .btn-gordon-brown:hover{
+    background-color: #814F2C;
+    color: white;
+    border-color: #814F2C;
+   }
+  </style>
+
+
 </head>
 <body>
-  <form> 
-    <div>
-      <label>Full Name</label>
-      <input required type="text">
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://marketing.gettyimages.com/wp-content/uploads/sites/7/2020/12/thumbnail-00283dda01a011ebac93ef1aa00544f6.jpeg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src ="https://th.bing.com/th/id/R.fb1e8e26d91460540e6722614b8919d1?rik=AJDWDaqKgujYsQ&riu=http%3a%2f%2fwww.bandt.com.au%2finformation%2fuploads%2f2016%2f11%2fGettyImages-672847115.jpg&ehk=kWvCAPwQ9xkN2iuv2toZAxUIYLaRWpFixj%2bqwRZiuY4%3d&risl=&pid=ImgRaw&r=0"class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src ="https://th.bing.com/th/id/R.72afb9506fcca05518616d8a76a2e573?rik=xHzZ9N4qqVyUbQ&riu=http%3a%2f%2fwww.bandt.com.au%2finformation%2fuploads%2f2015%2f09%2fgetty3.jpg&ehk=1QxAcaw8OTkLxCCclcoAuHuJ2XhuMaSGC4Ms8PIFI0M%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <div class="rows">
+    <div class="col-8 offset-2">
+      <form> 
+    <div class="form-floating mb-2">
+     
+      <input class="form-control is-invalid"   required type="text">
+       <label >Full Name</label>
+    </div>
+    <div class="mb-2">
+      <label class="form-label">Date of Birth</label>
+      <input class="form-control"  type="date" required>
     </div>
     <div>
-      <label>Date of Birth</label>
-      <input type="date" required>
+      <label class="form-label">Salary</label>
+      <input class="form-control"  type="number" >
     </div>
     <div>
-      <label>Salary</label>
-      <input type="number" >
+      <label class="form-label" for="">Email id</label>
+      <input class="form-control"  type="email" required placeholder="someone@email.com">
     </div>
+    <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Dancing
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Singing
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+  <label class="form-check-label" for="flexCheckDefault">
+    Cooking
+  </label>
+</div>
+   
     <div>
-      <label for="">Email id</label>
-      <input type="email" required placeholder="someone@email.com">
+      <label class="form-label" for="">Gender</label>
+      <input  name="gen" type="radio">Female
+      <input  name="gen" type="radio">Male
+      <input  name="gen" type="radio">Prefer not to say
     </div>
+    <div class="form-check">
+  <input class="form-check-input" type="radio" name="food" id="food1">
+  <label class="form-check-label" for="food1">
+    Veg
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="food" id="food1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Non Veg
+  </label>
+</div>
+   
     <div>
-      <label for="">Hobbies</label>
-      <input type="checkbox">Singing
-      <input type="checkbox">Dancing
-      <input type="checkbox">Cooking
-    </div>
-    <div>
-      <label for="">Gender</label>
-      <input name="gen" type="radio">Female
-      <input name="gen" type="radio">Male
-      <input name="gen" type="radio">Prefer not to say
-    </div>
-    <div>
-      <label for="">Food Category</label>
-      <input name="food" type="radio">Veg
-      <input name="food" type="radio">Non Veg
-    </div>
-    <div>
-      <label for="">Admission for class</label>
-      <select required>
+      <label class="form-label" for="">Admission for class</label>
+      <select class="form-select" required>
         <option value="">Choose your class</option>
         <option value="xi">Class 11</option>
         <option value="xii">Class 12</option>
@@ -50,15 +121,20 @@
 
     </div>
     <div>
-      <label for="">Address</label>
-      <textarea cols="30" rows="5"></textarea>
+      <label class="form-label" for="">Address</label>
+      <textarea class="form-control" cols="30" rows="5"></textarea>
     </div>
 
     <div>
-      <label for="">Password</label>
-      <input type="password" required>
+      <label class="form-label" for="">Password</label>
+      <input class="form-control"  type="password" required>
     </div>
-    <button type="submit">Save</button>
+    <button class="btn btn-warning btn-lg btn-gordon-brown" type="submit">Save</button>
+    <button type="button" class="btn btn-outline-primary">Primary</button>
   </form>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ 
 </body>
 </html>
