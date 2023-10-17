@@ -1,0 +1,43 @@
+form{
+  background-color: purple; 
+  color: white;
+  width: 400px;
+  margin: 0 auto ;
+  border-radius: 10px;
+}
+label{
+  display: inline-block;
+  width: 150px;
+}
+div{
+  margin-bottom: 6px;
+  padding-left: 20px;     
+}
+.place-at-center{
+  text-align: center;
+}
+.mybutton{
+  background-color: #BD7D49;
+  border-color: #BD7D49;
+  width: 100px;
+  height: 30px;
+  color: #FFF;
+  border-radius: 50px;
+  margin-bottom: 10px;
+}
+.mybutton:hover{
+  background-color: #814F2C;
+  color: white;
+  border-color: #814F2C;
+}
+
+.abc{
+  text-align: right;
+}
+
+.remember{
+  font-size: 10px;
+  color: bisque;
+  font-weight: bold;
+  float: left;
+}
